@@ -10,7 +10,7 @@ const movieArr = [
     {name:"zombieland",letters:10}
 ];
 
-let i = Math.floor(Math.random()*4);
+let i = Math.floor(Math.random()*9);
 let movie = movieArr[i].name;
 let number = movieArr[i].letters;
 console.log(movie);
