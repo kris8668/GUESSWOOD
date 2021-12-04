@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollywood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Guesswood</h1>
+        <p>Guess the movie name before you run out of chances.</p>
+        <button class="playbutton" onclick="showwrapper()">Let's Play!</button>
+    </div>
+    <div class="wrapper" id="gw-box-1">
+   <div class="container">
+    
+    <div class="input-box">
+        <p>Enter the alphabet</p>
+    <input type="text" id="enterGuess" maxlength="1" size="5" onkeyup="chkLetter()">
+    </div>
+    <div id="main"></div>
+    <div class="holder">
+
+    <div class="hollywood">
+        <a href="#">H</a>
+        <a href="#">O</a>
+        <a href="#">L</a>
+        <a href="#">L</a>
+        <a href="#">Y</a>
+        <a href="#">W</a>
+        <a href="#">O</a>
+        <a href="#">O</a>
+        <a href="#">D</a>
+    </div>
+    </div>
+  
+  <div id="output"></div>
+  <button id="replayButton" onclick="playAgain()">Play again</button>
+
+</div>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
