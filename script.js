@@ -1,7 +1,7 @@
 const movieArr = [
     {name:"tokillamockingbird",letters:18},
-    {name:"amityvillehorror",letters:16},
-    {name:"silenceofthelambs",letters:17},
+    {name:"theamityvillehorror",letters:19},
+    {name:"thesilenceofthelambs",letters:20},
     {name:"howtoloseaguyintendays",letters:22}
 ];
 
@@ -28,6 +28,7 @@ function chkLetter(){
     const allDivs = document.querySelectorAll('.boxes');
   console.log("chkLetter is running");
   let guess = document.getElementById("enterGuess").value;
+  guess = guess.toLowerCase();
   const items = document.querySelectorAll('a');
   
   if(guess === ""){
