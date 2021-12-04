@@ -2,7 +2,12 @@ const movieArr = [
     {name:"tokillamockingbird",letters:18},
     {name:"theamityvillehorror",letters:19},
     {name:"thesilenceofthelambs",letters:20},
-    {name:"howtoloseaguyintendays",letters:22}
+    {name:"howtoloseaguyintendays",letters:22},
+    {name:"spiderman",letters:9},
+    {name:"homealone",letters:9},
+    {name:"kungfupanda",letters:11},
+    {name:"lalaland",letters:8},
+    {name:"zombieland",letters:10}
 ];
 
 let i = Math.floor(Math.random()*4);
