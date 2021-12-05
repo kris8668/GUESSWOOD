@@ -33,7 +33,6 @@ function chkLetter(){
     const allDivs = document.querySelectorAll('.boxes');
   console.log("chkLetter is running");
   let guess = document.getElementById("enterGuess").value;
-  document.getElementById("enterGuess").value = "";
   guess = guess.toLowerCase();
   const items = document.querySelectorAll('a');
   
