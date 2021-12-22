@@ -2,36 +2,19 @@ let movieName;
 
 async function getMovie(){
 const movie = 
-fetch("http://localhost:3000/movie")
+fetch("https://guessback.herokuapp.com/movie")
 .then(value => value.json())
-.then(data => data.title);
+.then(data => data.title)
+.catch((err) => console.log(err));
 
-/*const movieArr = [
-    {name:"tokillamockingbird",letters:18},
-    {name:"theamityvillehorror",letters:19},
-    {name:"thesilenceofthelambs",letters:20},
-    {name:"howtoloseaguyintendays",letters:22},
-    {name:"spiderman",letters:9},
-    {name:"homealone",letters:9},
-    {name:"kungfupanda",letters:11},
-    {name:"lalaland",letters:8},
-    {name:"zombieland",letters:10}
-];*/
 
-/*let i = Math.floor(Math.random()*9);
-let movie = movieArr[i].name;
-let number = movieArr[i].letters;
-console.log(movie);
-console.log(number);*/
+let str = await movie;
 
- let str = await movie;
-
- movieName = str.replaceAll(" ","").toLowerCase();
-
-const number = movieName.length;     
+movieName = str.replaceAll(" ","").toLowerCase();
 
 console.log(movieName);
 
+const number = movieName.length;     
 
 for(let x=0;x<number;x++){
    const cols = document.createElement("div");
@@ -40,6 +23,7 @@ for(let x=0;x<number;x++){
    
 }
 }
+
 
 let no_of_guess = 0;
 function chkLetter(){
